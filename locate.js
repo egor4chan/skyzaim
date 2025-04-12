@@ -5,6 +5,7 @@ var step = 0;
 
 function Bid() {
     calculator.style.display = 'none'
+    step_1.style.display = 'block'
     step = 1;
 }
 
