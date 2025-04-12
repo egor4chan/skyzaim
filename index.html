@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Микрокредитная организация</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Easy Credit</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#calculator">Калькулятор</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Получите займ за 5 минут</h2>
+    <p>Быстрое и удобное оформление займа онлайн. Легко и без лишних вопросов.</p>
+    <a href="#calculator" class="btn-main">Рассчитать займ</a>
+  </section>
+
+  <section id="calculator" class="calculator">
+    <h2>Рассчитайте ваш займ</h2>
+    <form id="loan-form">
+      <label for="amount">Сумма займа</label>
+      <input type="range" id="amount" min="1000" max="100000" value="10000" step="1000">
+      <span id="amountValue">10000</span> руб.
+
+      <label for="duration">Срок займа (в днях)</label>
+      <input type="range" id="duration" min="1" max="365" value="30" step="1">
+      <span id="durationValue">30</span> дней
+
+      <button type="submit" class="btn-calculate">Рассчитать</button>
+
+      <div id="result" class="result">
+        <p><strong>Итого к возврату: </strong><span id="totalAmount">0</span> руб.</p>
+      </div>
+    </form>
+  </section>
+
+  <section id="about" class="about">
+    <h2>О нас</h2>
+    <p>Мы — микрокредитная организация, которая предоставляет быстрые займы на выгодных условиях. Простое оформление, отсутствие скрытых платежей и прозрачные условия — это то, что мы предлагаем нашим клиентам.</p>
+  </section>
+
+  <
