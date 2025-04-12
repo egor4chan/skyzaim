@@ -22,80 +22,90 @@
         <img src="menu.png" id="menu" onclick="openMenu()">
     </header>
 
-    <div class="calculator-box">
-        <span class="how_much label">Сколько вам нужно?</span>
-        <span class="amount-value val" id="amount-val">25 000₽</span>
-        <input type="range" id="amount" min="1000" max="50000" value="25000" step="1000">
+    <div id="calculator-page">
+        <div class="calculator-box">
+            <span class="how_much label">Сколько вам нужно?</span>
+            <span class="amount-value val" id="amount-val">25 000₽</span>
+            <input type="range" id="amount" min="1000" max="50000" value="25000" step="1000">
 
-        <span class="days label">На какой срок?</span>
-        <span class="days-value val" id="date-val">14 дней</span>
-        <input type="range" id="date" min="7" max="21" value="14" step="1">
+            <span class="days label">На какой срок?</span>
+            <span class="days-value val" id="date-val">14 дней</span>
+            <input type="range" id="date" min="7" max="21" value="14" step="1">
 
-        <div class="example">
+            <div class="example">
+                <div>
+                    <span class="ex-label">Получаете</span><br>
+                    <span id="amount-ex" class="ex">25 000₽</span>
+                </div>
+                <div>
+                    <span class="ex-label">Проценты</span><br>
+                    <span id="percent-ex" class="ex"><a class="blue">0₽</a></span>
+                </div>
+                <div>
+                    <span class="ex-label">Отдаете</span><br>
+                    <span id="total-ex" class="ex">25 000₽</span>
+                </div>
+            </div>
+
+            <button onclick="Bid()">Получить бесплатно</button>
+            <span class="underbutton">* - первый заем бесплатно, под 0%</span>
+        </div>
+
+        <div class="payments-list">
+            <img src="https://ekapusta.com/assets/images/payment-systems/mir.svg" alt="">
+            <img src="https://ekapusta.com/assets/images/payment-systems/visa.svg" alt="">
+            <img src="https://ekapusta.com/assets/images/payment-systems/master.svg" id="master">
+            <img src="https://ekapusta.com/assets/images/payment-systems/sbp.svg" id="sbp">
+            
+        </div>
+
+        <div class="medals">
             <div>
-                <span class="ex-label">Получаете</span><br>
-                <span id="amount-ex" class="ex">25 000₽</span>
+                <img src="clients.png">
+                <span class="label">Более 1 000 000 клиентов</span>
+                <span class="description">по всей территории России уже убедились в высоком качестве нашего сервиса.</span>
             </div>
             <div>
-                <span class="ex-label">Проценты</span><br>
-                <span id="percent-ex" class="ex"><a class="blue">0₽</a></span>
+                <img src="years.png">
+                <span class="label">3 года успешной работы</span>
+                <span class="description">за это время мы стали быстрее, проще и удобнее для вас. Оцените наш труд?</span>
+            </div>
+        </div>
+
+        <div class="about">
+            <div>
+                <span class="name">Удобное погашение</span><br>
+                <span class="desc">15 способов погашения займов: банковской картой, СБП, онлайн-кошельки и др. Погасить можно сразу!</span>
             </div>
             <div>
-                <span class="ex-label">Отдаете</span><br>
-                <span id="total-ex" class="ex">25 000₽</span>
+                <span class="name">Быстрые переводы</span><br>
+                <span class="desc">Деньги у вас уже через <a class="blue">5 минут!</a></span>
+            </div>
+            <div>
+                <span class="name">На любой счет</span><br>
+                <span class="desc">Вы сами выбираете способ получения: переводом на карту или онлайн-кошелек.</span>
+            </div>
+            <div>
+                <span class="name">Высокий % одобрения</span><br>
+                <span class="desc">Одобряем более <a class="blue">95% заявок!</a></span>
+            </div>
+            <div>
+                <span class="name">Реферальная система</span><br>
+                <span class="desc">Получайте <a class="blue">до 1 500₽</a> за приглашенного вами клиента.</span>
             </div>
         </div>
-
-        <button>Получить бесплатно</button>
-        <span class="underbutton">* - первый заем бесплатно, под 0%</span>
     </div>
 
-    <div class="payments-list">
-        <img src="https://ekapusta.com/assets/images/payment-systems/mir.svg" alt="">
-        <img src="https://ekapusta.com/assets/images/payment-systems/visa.svg" alt="">
-        <img src="https://ekapusta.com/assets/images/payment-systems/master.svg" id="master">
-        <img src="https://ekapusta.com/assets/images/payment-systems/sbp.svg" id="sbp">
-        
-    </div>
-
-    <div class="medals">
-        <div>
-            <img src="clients.png">
-            <span class="label">Более 1 000 000 клиентов</span>
-            <span class="description">по всей территории России уже убедились в высоком качестве нашего сервиса.</span>
-        </div>
-        <div>
-            <img src="years.png">
-            <span class="label">3 года успешной работы</span>
-            <span class="description">за это время мы стали быстрее, проще и удобнее для вас. Оцените наш труд?</span>
-        </div>
-    </div>
-
-    <div class="about">
-        <div>
-            <span class="name">Удобное погашение</span><br>
-            <span class="desc">15 способов погашения займов: банковской картой, СБП, онлайн-кошельки и др. Погасить можно сразу!</span>
-        </div>
-        <div>
-            <span class="name">Быстрые переводы</span><br>
-            <span class="desc">Деньги у вас уже через <a class="blue">5 минут!</a></span>
-        </div>
-        <div>
-            <span class="name">На любой счет</span><br>
-            <span class="desc">Вы сами выбираете способ получения: переводом на карту или онлайн-кошелек.</span>
-        </div>
-        <div>
-            <span class="name">Высокий % одобрения</span><br>
-            <span class="desc">Одобряем более <a class="blue">95% заявок!</a></span>
-        </div>
-        <div>
-            <span class="name">Реферальная система</span><br>
-            <span class="desc">Получайте <a class="blue">до 1 500₽</a> за приглашенного вами клиента.</span>
-        </div>
+    <div id="step-1" class="step">
+        <h1 class="page-name">Регистрация</h1>
+        <span class="input-label">Номер телефона</span>
+        <input type="number" placeholder="+7 (900) 999-00-00" class="input">
+        <button onclick="NextPage()">Продолжить</button>
     </div>
 
     <footer></footer>
 
     <script src="souce.js"></script>
+    <script src="locate.js"></script>
 </body>
 </html>
