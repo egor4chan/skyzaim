@@ -14,3 +14,7 @@ function NextPage() {
         step_1.style.display = 'none'
     }
 }
+
+function MainPage() {
+    calculator.style.display = 'block'
+}
